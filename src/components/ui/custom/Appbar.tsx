@@ -6,7 +6,7 @@ import { Button } from "../button";
 export function Appbar() {
   const [isOpenSidebar, setIsOpenSidebar] = useState(false);
   return (
-    <div className="flex justify-between items-center py-4">
+    <div className="flex justify-between items-center py-4 w-full max-w-7xl mx-auto px-4 border-b border-secondary shadow-sm md:border-none md:shadow-none">
       <div className="flex items-center gap-4">
         <img src="./logo.png" alt="accredian" width={100} height={100} />
         <Button className="hidden md:flex">
