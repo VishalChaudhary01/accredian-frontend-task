@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { ChevronDownIcon, ChevronRight } from "lucide-react";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "../sheet"
-import { Button } from "../button";
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle } from "../ui/sheet"
+import { Button } from "../ui/button";
+import { ReferButton } from "./ReferButton";
 
 export function Appbar() {
   const [isOpenSidebar, setIsOpenSidebar] = useState(false);
@@ -18,7 +19,7 @@ export function Appbar() {
         <Button variant="ghost">Resources</Button>
         <Button variant="ghost">About Us</Button>
         <Button variant="secondary">Login</Button>
-        <Button>Try for free</Button>
+        <ReferButton>Try for free</ReferButton>
       </div>
       <div className="md:hidden">
           <Button onClick={() => setIsOpenSidebar(true)}>
@@ -44,7 +45,7 @@ function SidebarSheet({ isOpenSidebar, setIsOpenSidebar }: { isOpenSidebar: bool
           <Button variant="ghost">Resources</Button>
           <Button variant="ghost">About Us</Button>
           <Button variant="secondary">Login</Button>
-          <Button>Try for free</Button>
+          <ReferButton>Try for free</ReferButton>
         </SheetDescription>
       </SheetContent>
     </Sheet>

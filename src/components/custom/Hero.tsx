@@ -1,4 +1,4 @@
-import { Button } from "../button";
+import { ReferButton } from "./ReferButton";
 
 export function Hero() {
   return (
@@ -15,7 +15,7 @@ export function Hero() {
             Get the chance to win up to{" "}
             <span className="font-bold text-primary text-2xl">Rs. 15,000</span>
           </p>
-          <Button>Refer Now</Button>
+          <ReferButton>Refer Now</ReferButton>
         </div>
       </div>
       <div className="md:hidden">
@@ -41,9 +41,9 @@ function HeroMobile() {
           <p className="text-lg">Get the chance to win up to</p>
           <span className="text-2xl font-bold text-primary">Rs. 15,000</span>
         </div>
-        <Button className="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary-dark transition-colors">
+        <ReferButton>
           Refer Now
-        </Button>
+        </ReferButton>
       </div>
     </div>
   );

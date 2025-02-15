@@ -1,9 +1,9 @@
-import { Appbar } from "./components/ui/custom/Appbar";
-import { AddBanner } from "./components/ui/custom/AddBanner";
-import { NavLinks } from "./components/ui/custom/NavLinks";
-import { Hero } from "./components/ui/custom/Hero";
-import { ReferProcess } from "./components/ui/custom/ReferProcess";
-import { Benefits } from "./components/ui/custom/Benefits";
+import { Appbar } from "./components/custom/Appbar";
+import { AddBanner } from "./components/custom/AddBanner";
+import { NavLinks } from "./components/custom/NavLinks";
+import { Hero } from "./components/custom/Hero";
+import { ReferProcess } from "./components/custom/ReferProcess";
+import { Benefits } from "./components/custom/Benefits";
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
       <Hero />
       <ReferProcess />
       <Benefits />
-      <h1 className="text-2xl font-bold">Hello World</h1>
     </div>
   )
 }

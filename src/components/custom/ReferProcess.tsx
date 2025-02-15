@@ -1,4 +1,4 @@
-import { Button } from "../button";
+import { ReferButton } from "./ReferButton";
 
 export function ReferProcess() {
   return (
@@ -8,7 +8,7 @@ export function ReferProcess() {
         <img src="./process.svg" alt="refer process" className="hidden md:block w-full object-contain"/>
         <img src="./processMobile.svg" alt="refer process" className="block md:hidden w-full object-contain"/>
       </div>
-      <Button>Refer Now</Button>
+      <ReferButton>Refer Now</ReferButton>
     </div>
   );
 }
